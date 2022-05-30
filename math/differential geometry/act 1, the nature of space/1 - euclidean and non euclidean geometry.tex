@@ -1,12 +1,79 @@
 \documentclass[12pt, letterpaper, twoside]{article}
 \usepackage[utf8]{inputenc}
-
+\usepackage{amsthm}
+\usepackage{setspace}
+\setstretch{.75}
 \title{1 - euclidean and non euclidean geometry}
+\newtheorem{mydef}{Definition}
+
+
+\newenvironment{andrew_section}[1]
+    {
+    \section{#1}
+    \begin{itemize}
+    }
+    {
+    \end{itemize}
+    }
 
 \begin{document}
-
 \maketitle
 
+\begin{proof}
+    example proof for later
+\end{proof}
+
+\begin{mydef}
+    example definition for later
+\end{mydef}
+
+\begin{andrew_section}{euclidean and hyperbolic geometry}
+    \item flatness is defined as a space where the pythagorean theorem holds true.
+    \item 
+        euclidean geometry, parallel axiom: Through any point p not 
+        on the line L, there exists exactly one line P that is parallel
+        to L
+    \item 
+        1830, Lobachevsky announced the existence of hyperbolic geometry 
+        by denying the parallel axiom.
+    \item 
+        hyperbolic geometry, hyperbolic axiom: There exists at least 2
+        parallel lines through p that do not meet L
+\end{andrew_section}
+
+\begin{andrew_section}{spherical geometry}
+    \item 
+        parallel axiom states exactly one parallel exists.  denying 
+        this means you're either stating there's less than 1 (aka 0) or
+        more than 1.  the first option defines spherical geometry and the
+        second defines hyperbolic
+    \item 
+        in spherical geometry, lines are "great circles", and these
+        "lines" can be used to construct "triangles"
+\end{andrew_section}
+
+\begin{andrew_section}{the angular excess of a spherical triangle}
+    \item 
+        denying the parallel axiom is logically equal to denying
+        that the interior angles of a triangle sum to pi radians
+    \item  angular excess, $\mathcal{E}$ $\equiv (\textnormal{angle sum of triagle}) - \pi$ 
+    \item 
+        $\mathcal{E} = \frac{1}{R^2} \mathcal{A}$, for any triangle
+        on a sphere with radius $\mathcal{R}$ and area $\mathcal{A}$
+    
+\end{andrew_section}
+
+\begin{andrew_section}{intrinsic and extrinsic geometry of curved surfaces}
+    \item test
+\end{andrew_section}
+
+\begin{andrew_section}{constructing geodesics by their straightness}
+    \item test
+\end{andrew_section}
+
+\begin{andrew_section}{the nature of space}
+    \item test
+\end{andrew_section}
 
 
 \end{document}
