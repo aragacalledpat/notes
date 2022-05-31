@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsthm}
 \usepackage{setspace}
+\usepackage{esint}
 \setstretch{.75}
 \title{2 - Gaussian Curvature}
 
@@ -21,17 +22,46 @@
 
 \begin{andrew_section}{introduction}
     \item 
-        flatness is defined as a space where the pythagorean theorem holds true.
+        $\mathcal{E} = + \frac{1}{\mathcal{R}^2}$ is called 
+        \emph{Gaussian Curvature} of the sphere
+    \item 
+        $\mathcal{E} = - \frac{1}{\mathcal{R}^2}$ is also called 
+        \emph{Gaussian Curvature}, in hyperbolic geometry
+    \item 
+        Gauss wanted to measure the curvature at a particular point,
+        so we can rearrange 
+        $\mathcal{E}(\Delta) = \mathcal{K}\mathcal{A} (\Delta)$ as
+        $\mathcal{K} = \frac{\mathcal{E}(\Delta)}{\mathcal{A} (\Delta)}$,
+        which makes it clear that $\mathcal{E}$ is 
+        \emph{angular excess per unit area}.  to define the curvature
+        at a point, we define a limit as the area of a triange around
+        the point shrinks to 0.
+    \item 
+        there is nothing special about the triangle here, any n-gon will
+        work, using the formula: \\ 
+        $\mathcal{E}(\textnormal{n-gon}) \equiv [\textnormal{angle sum}]
+        - (n - 2)\pi$
 \end{andrew_section}
 
 \begin{andrew_section}{the circumference and area of a circle}
     \item 
-        flatness is defined as a space where the pythagorean theorem holds true.
+        we have defined curvature with respect to tiny triangles,
+        but it is an abstract thing that has an "iron grip" over the geometry
+        of a space.  two examples:
+    \item 
+        tiny circles determine curvature as well**
+    \item 
+        area of circles determine curvature as well**
 \end{andrew_section}
 
 \begin{andrew_section}{the local gauss-bonnet theorem}
     \item 
-        flatness is defined as a space where the pythagorean theorem holds true.
+        angular excess is additive.  
+        $\mathcal{E}(\Delta) = \mathcal{E}(\Delta_1) + \mathcal{E}(\Delta_2)$.
+        this allows for finer and finer subdivisions, and thus a limit to the curvature 
+    \item 
+        $\mathcal{E}(\Delta) = \iint_\Delta \mathcal{K} \,d\mathcal{A}$
+        
 \end{andrew_section}
 
 
