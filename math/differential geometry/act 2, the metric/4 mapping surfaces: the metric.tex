@@ -4,7 +4,8 @@
 \usepackage{amsthm}
 \usepackage{setspace}
 \usepackage{esint}
-\setstretch{.75}
+\usepackage{amssymb}
+\setstretch{.9}
 
 \newenvironment{andrew_section}[1]
     {
@@ -22,15 +23,96 @@
 \maketitle
 
 \begin{andrew_section}{introduction}
-    \item f
+    \item 
+        Gauss' big insight was to show that the intrinsic geometry of
+        a surface is totally determined by having a rule for infinitesimal
+        distances between two points; the metric.  this can thus also determine
+        length's of curves, and geodesics which are paths that minimize the distance
+    \item 
+        in this context, map means 'cartographic' map, where 'mapping'
+        will be the more typical mathematical usage.  
+    \item 
+        stragegy is to make a one to one function between: \\
+         points $\hat{z}$ on $\mathcal{S}$, to points z on $\mathbb{C}$.  this will
+         inevitably cause some distortion
+    \item 
+        take points $\hat{z}$, $\hat{q}$ on $\mathcal{S}$.  \\
+        represent them as z, q on $\mathbb{C}$ with z = $r{\rm e}^{i\theta}$,
+        q = z + $\delta z$ \\
+        $\delta \hat{s}$ is distance between $\hat{z}$ and $\hat{q}$ \\
+        $\delta s = |\delta z|$
+    \item 
+        rule giving  $|\delta z|$ is the metric.  obviously depends on both
+        direction and length 
+    \item 
+        $d \hat{s} = \Lambda (z, \gamma) ds$ \\ 
+        given a point and a direction, how much do we have to locally
+        expand $\mathbb{C}$ to preserve distances?
 \end{andrew_section}
 
 \begin{andrew_section}{projective map of the sphere}
-    \item f
+    \item 
+        imagine the southern hemisphere of the sphere, a bowl shape.
+        the south pole, the bottom of the bowl, rest on the origin of
+        $\mathbb{C}$. the center of the sphere, shoots out light rays.
+        where those light rays hit $\mathbb{C}$ is called the 
+        \emph{projective map of the southern hemisphere}
+    \item 
+        this map sends circles on $\mathcal{S}$ to ellipses on $\mathbb{C}$.
+        this is true in general for any surface, if the radius of the circle is
+        infinitesimal.
+    \item 
+        projective map sends geodesics on $\mathcal{S}$ to lines on 
+        $\mathbb{C}$, but it does not preserve angles.
+    \item 
+        formula for metric on the sphere, given polor coordiantes on
+        $\mathbb{C}$
+
 \end{andrew_section}
 
 \begin{andrew_section}{the metric of a general surface}
-    \item f
+    \item 
+        different maps have different different metrics even though
+        they describe the same intrinsic geometry.  for example,
+        imagine a map of the sphere where longitude and latitude 
+        ($\theta,\phi$), we map to the carteasan coordiantes
+        ($\theta,\phi$).  the metric for this map will be
+        $ d \hat{s}^2  = R^2[\sin^2 (\phi) d\theta^2 + d \phi^2]$,
+        which is different from the projective map metric for a sphere.
+    \item 
+        take a general surface and draw 2 families of curves, that both
+        vary smoothly, and so any point on the surface can be uniquely represented
+        by a point on each of the curves (let's call them U curves and V curves).
+        let a point on the surface be labeled as $u + i v$ and a point can
+        be labeled as $\hat{z} = U + i V$
+    \item 
+        imagine a small movement away from z on the map.  
+        $\delta z = \delta u + i \delta v$ \\
+        but this is on the map, how do we project it back to the actual
+        surface? 
+    \item by virtue of differentiability, we can say that some small movement
+        on the v curve will produce some small movement on the surface.
+        put another way, $\frac{\partial \hat{s_1}}{\partial u} \equiv A$,
+        $\frac{\partial \hat{s_2}}{\partial v} \equiv B$
+    \item 
+        we can see that A and B are the local scale factors that have to be
+        applied to the map for distances to be preserved.  A can be viewed
+        as inversly proportional to the crowding of the u-curves.  the greater
+        the crowding, the greater result $\delta \hat{s_1}$ will have on u
+    \item 
+        $\omega$ is angle between u-curves and v-curves, which depends on
+        position
+    \item 
+        general metric for the surface: \\
+        $d \hat{s}^2 = A^2 du^2 + B^2 dv^2 + 2Fdu \ dv$
+    \item 
+        however, once the u-curves are chosen, it is always possible
+        to select an orthoganal set of v-curves, which anniliates the
+        last term.
+    \item 
+        in general it is impossible to cover all of the surface with
+        a single u-v set of curves - the curves will inevitably intersect on
+        any closed surface 
 \end{andrew_section}
 
 \begin{andrew_section}{the metric curvature formula}
