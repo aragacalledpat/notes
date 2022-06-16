@@ -116,15 +116,76 @@
 \end{andrew_section}
 
 \begin{andrew_section}{the metric curvature formula}
-    \item f
+    \item 
+        once handed a metric, you should in principle be able to derive the
+        curvature at any point.  what is not a given is that the formula is
+        beautiful and simple.  it will take most of the book to derive for real.
+    \item 
+        *** $\mathcal{K} = - \frac{1}{AB}(\partial_v [\frac{\partial_v A}{B}] + \partial_u [\frac{\partial_u B}{A}])$
+        
+    \item 
+        can also be used to calculate areas. $ dA = ABdu \ dv$ 
 \end{andrew_section}
 
 \begin{andrew_section}{conformal maps}
-    \item f
+    \item 
+        projective map preserves straight lines but usually it's better 
+        to preserve angles.
+    \item 
+        map that preserves angles and sense is \emph{conformal},
+        map that preserves angles and inverts sense ins \emph{anti-conformal}
+    \item 
+        angle between curves means the angle between their tangents
+    \item 
+        with respect to metric formula, a map is conformal if the scale
+        factor, $\Lambda$, depends on position but not direction.
+        this way, *infinitesimal shapes on the map are the same shape, just
+        a different size!*
+    \item 
+        gauss proved that given any surface, you can find an orthogonal map
+        that is also conformal, in the sense that A = B.  since A is the same as B
+        and the coordinates are orthogonal, we can express the general metric
+        of the surface as \\
+         $ d\hat{s}^2 = \Lambda^2 [du^2 + dv^2]$.
+        \item 
+            this also beatifully simplifies the curvature formaula to: \\
+            $\mathcal{K} = - \frac{\nabla^2 \ln \Lambda}{\Lambda^2}$
 \end{andrew_section}
 
 \begin{andrew_section}{some visual complex analysis}
-    \item f
+    \item 
+        every surface contains infinite variety of u-v curves and conformal maps 
+    \item 
+        let a conformal mapping be $F = \mathbb{C} \rightarrow \mathcal{S}$
+    \item 
+        conformal $(\tilde{u}, \tilde{v})$-coordinates can be created by
+        rotating/expanding/translating any given u-v curves.
+    \item 
+        let $z = u + iv$ be in $\mathbb{C}$ and 
+        $\tilde{z} = \tilde{u} + i \tilde{v}$ be a seperate copy of $\mathbb{C}$
+        but under some function f.
+    \item 
+        big idea is that before we had f going from S to C, now we also have a
+        function F going from C to S.  so all together we have a copy of C
+        mapping to S, which then maps onto another C.  C -> S -> C.
+        both are conformal.  we now have a freedom of rotating/expanding/translating
+        the u-v lines in the first copy of C, which will give us new u-v coordinates
+        in S, thus leading to an infinite variety of them.
+    \item 
+        $f(z) = a e ^ {i \tau} z + w$. scale by a, twist by tau, shift by a complex
+        contstant w.
+    \item 
+        remember we have F as the map and now f as a function on the first copy
+        of C.  so our new u-v coordinates on S are given by $\tilde{F} = F \circ f$
+    \item  
+        useful to think of the derivative which blows away the constant w, and is just the 
+        amplification + twist * (tiny move in z).  "amplitwist"
+    \item 
+        from some basic reasoning (?) we can see that differentiable complex mappings
+        are all conformal.
+    \item 
+        this procedure allows one to take any conformal mapping from C to itself
+        and "pass it through" S.
 \end{andrew_section}
 
 \begin{andrew_section}{the conformal stereographic map of the sphere}
