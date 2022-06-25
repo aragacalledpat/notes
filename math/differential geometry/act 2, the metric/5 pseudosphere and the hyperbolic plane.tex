@@ -115,17 +115,83 @@
 
 \begin{andrew_section}{using optics to find geodesics}
     \item 
-        Gauss
+        light takes the path that minimizes time.  imagine points a and b.
+        light starts at a and ends at b.  a is above water, b is below.
+        now imagine the point where the line will hit the water.
+        changing the position will change the time spent on the path.
+        because of fermat's principle, the light will in general 
+        change angles when it his the water...aka snells law.
+    \item 
+        if you nudge the (stationary) point where light hits by $\epsilon$,
+        you increase the 'time in flight' by 
+        $ \frac{\epsilon \sin{\theta_1}}{v_1}$ (extra time spent in air), 
+        but decrease it by $ \frac{\epsilon \sin{\theta_2}}{v_2}$. noting
+        that at a stationary point these two quantities must be equal, and
+        cancelling the $\epsilon$, we have : \\
+        $\frac{ \sin{\theta_1}}{v_1} = \frac{ \sin{\theta_2}}{v_2}$, a 
+        rearranged snells law.
+    \item 
+        take $\hat{a}$ and $\hat{b}$ on pseudosphere, corresponding to
+        a and b on $\mathbb{H}^2$.  imagine a particle taking different
+        paths between the points but always at unit speed. on hyperbolic
+        plane, because of the metric, the particle will not travel at unit
+        speed. bc of conformality, this change in speed doesn't depend on direction
+    \item 
+        on pseudosphere, geodesic will be the shortest path, and given the constant
+        velocity...also shortest time, thus obeying fermat's principle
+    \item 
+        thus geodesics in the half plane follow snells law, which means
+        they follow semicircle paths.
 \end{andrew_section}
 
 \begin{andrew_section}{the angle of parallelism}
     \item 
-        Gauss
+        now it's obvious, visually, that there are infinitly many
+        parallel lines given a point p and a line L.  they are called
+        \emph{ultra-parallel}
+    \item 
+        looking at same diagram, [5.9], for any point p and 
+        line L, there are also 2 lines that only hit L at the horizon,
+        called 'asymytotic'
+    \item 
+        given this point p and a line L, there is still only one point (q)
+        that, when connected by a geodesic, will hit L at a right angle, we
+        will call this line M. M lets us define a distance from a point to a line.
+    \item 
+        take this setup as a whole - for any point p and line L, we have 
+        two asmptotic lines, and a third line M, hitting L at a right angle.
+        M actually bisects the angle contained by the two asymtotics.
+        angle between M and an asmyptotic is called the angle of parallelism,
+        usually called $\Pi$.  
+    \item 
+        distance between p and L is denoted D.  there is a relationship
+        between D and $\Pi$, $\tan({\frac{\Pi}{2}}) = e^{-D}$, 
+        Bolyai-Lobachevski Formula.
+    \item 
+        as p approaches L, $\Pi$ approaches $\frac{\pi}{2}$, looks euclidean.
+        as p gets farther away from L, the proportion of rays eminating from p
+        that hit L become smaller and smaller.
+    \item 
+        to a tiny observer, no hyperbolic line is different from any other.
+        to a global observer, it seems like some lines only have one endpoint
+        and then go off to infinity.  in actuality, those lines all meet at
+        infinity.  shows how important it is to switch between the different
+        perspectives
+    \item 
+        meaningful application of this: rotating something about a point.
+        distance preserving transformations are called isometries.  thinking
+        about a transformation of an arc looking hyperbolic line, we can rotate
+        it until it becomes a verticle line.
 \end{andrew_section}
 
 \begin{andrew_section}{the beltrami-poincare disc}
     \item 
-        Gauss
+        half plane is one way of representing $\mathbb{H}^2$, but there
+        are other (mathematically but not psychologically) equivelent
+        representations.  one is the beltrami-poincare disc.
+    \item 
+        infinite distant horizon is a boundary disk, metric is: \\
+        $d\hat{s} = \frac{2}{1 - r^2} ds$, r is distance from center of disc
 \end{andrew_section}
 
 \end{document}
