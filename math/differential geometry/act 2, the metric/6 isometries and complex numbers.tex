@@ -23,12 +23,95 @@
 \maketitle
 
 \begin{andrew_section}{introduction}
-\item
+    \item 
+        isometries preserve magnitude of angles.  ones
+        that preserve the sense of the angle are called
+        \emph{direct isometries} and ones that reverse the
+        sense are called \emph{opposite isometries}. direct are a
+        special kind of conformal mapping and opposite are a special
+        kind of anticonformal.
+    \item 
+        isometries of a surface form a group $\mathcal{G}(\mathcal{S})$
+    \item 
+        direct and opposite compose like + and - under multiplication,
+        e.g. (-) (-) = +. thus, direct isometries are a subgroup of 
+        $\mathcal{G}(\mathcal{S})$, denoted 
+        $\mathcal{G}_+(\mathcal{S})$, but opposites don't (closure
+        is not respected in the example above)
+    \item 
+        let's take 2 opposite isometries.  let one be fixed, denote 
+        it by $\xi$, and let another be the general opposite
+        isometry, varying over all possible ones on the surface...
+        call  it $\zeta$.  the inverse of an opposite transformation
+        is also opposite, so $\xi^{-1}$ is opposite.  via the 
+        (-)(-) = (+) example, 
+        $\xi^{-1} \circ \zeta \in \mathcal{G}_+(\mathcal{S})$.  thus 
+        $\zeta \in \mathcal{G}_+(\mathcal{S}) \circ \xi$
+    \item 
+        its clear that by fixing one opposite, and left multiplying by g+,
+        we get the full group of opposite isometries.  now we can construct
+        the full group g by combining the direct isometries with the opposite
+        isometries.
+    \item 
+        $\mathcal{G}(\mathcal{S}) = $ direct union opposite \\
+        $\mathcal{G}(\mathcal{S}) = [\mathcal{G}_+(\mathcal{S})] \bigcup [\mathcal{G}_+(\mathcal{S}) \circ \xi]$ 
+    \item 
+        not every surface has meaningful isometries
+    \item 
+        **three geometries of constant curvature have symmetry
+        groups $\mathcal{G}_+(\mathcal{S})$ that are subgroups
+        of mobius transformations of complex plane, which are
+        $\frac{az+b}{cz+d}$**
+
 \end{andrew_section}
 
 \begin{andrew_section}{mobius transformations}
     \item 
-        Gauss
+        can be decomposed into 4 simple transformations:\\
+        translate, rotate/scale, inversion, another translation.
+        this can make proving and understanding certain properties
+        much more straightforward. transformation is called singular
+        when ad-bc=0
+    \item 
+        $z \rightarrow \frac{1}{z}$, complex inversion.  key to
+        understanding mobius transformations.  view in polar coordinates:\\
+        $r e^{i\theta} \rightarrow (\frac{1}{r}) e^{- i \theta}$.
+        invert the radius, negate the angle.  can be viewed as two
+        step process: take reciprical lengh, complex conjuate. order actually
+        doesn't matter.  inverting the length is called \emph{geometric inversion}.
+        unit circle is very important to the geometric inversion.  sends
+        points interior to exterior and vice a versa, leaves circle untouched.
+        denote this transformation $\mathcal{J}_C$. we can generalize the
+        transform to other circles of different center and radius, then
+        denote it $\mathcal{J}_{K}$, or whatever.
+    \item 
+        *inversion is just a rotation of the riemann sphere by $\pi$,
+        about the real axis* \\
+        inversion is anticonformal, preserves circles \\
+        if a circle inside C passes through 0, it gets mapped to a line
+        and its interior becomes like a half plane, split by the line. \\
+        this correspondence between half-planes and interior circles is 
+        how half-plane model of hyperbolic geometry is mapped to the
+        beltrami-pointcare disc(nice...).
+    \item 
+        we can now see that mobius transformations are conformal
+        and map circles to circles, region to the left of the circle
+        is mapped to the left of the circle after the transform
+    \item 
+        we've geometrically made it rigourous that $\frac{1}{\infty} = 0$
+        and $\frac{1}{0} = \infty$, to make it algebraically clear,
+        let a point of the riemann sphere be defined by 2 complex numbers,
+        [like spinors...cool].  z = one/the other.  one point on the 
+        riemann sphere has one z in C, but one z in C has infinite pairs on
+        riemann sphere.  now infinity just equals [one of the pairs,0]
+    \item 
+        mobius transformation can be thought of as a 2x2 matrix,
+        linear transformation with complex constants a,b,c,d.  this helps
+        to find compositions of 2 mobius transformations (matrix multiplication),
+        and inverse of a mobius transformation (inverse of matrix).
+        these matrices are not unique, but we can normalize them.  then
+        they are unqiue up the the sign....so M will always be the same as
+        -M
 \end{andrew_section}
 
 \begin{andrew_section}{the main result}
