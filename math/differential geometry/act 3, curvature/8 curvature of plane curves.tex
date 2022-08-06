@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[margin=.5in]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{setspace}
 \usepackage{esint}
@@ -22,7 +23,77 @@
 
 \maketitle
 
-\begin{andrew_section}{three dimentional hyperbolic geometry}
+\begin{andrew_section}{introduction}
+    \item 
+        two dimentional surface can be deformed in some limited ways
+        while preserving intrisinc geometry, one dimentional surfaces
+        (curves) can be arbitrarily deformed while preserving the
+        intrinsic geometry....so to an ant on a curve, the shape of the
+        curve has no meaning
+    \item 
+        extrinsic curvature of 1-d curves will have direct meaning for
+        intrinsic curvature of 2d surfaces
+    \item 
+        if we imagine a bead on the 1d curve, and imagine the bead
+        follows phyiscal laws, when a turn happens, the bead feels 
+        an acceleration because the curvature implies a change of
+        velocity.
+\end{andrew_section}
+
+\begin{andrew_section}{the circle of curvature}
+    \item 
+        newton was the first to examine curvature, and did so
+        when he was 21.  first he found a way to determine
+        the 'tangent circle'. at a point to the curve.  much like
+        tangent line at a point, but instead it is to describe the
+        curvature at a point.  basically take two perpendicular lines
+        near the point, note where they directionally meet, and take the
+        limit as the two points come together...similar to tangent lines.
+        where they meet is the center of the cicle.  the radius of the circle
+        is k.
+    \item 
+        newton used that to find sigma, the amount the tangent lines
+        diverage 
+\end{andrew_section}
+
+\begin{andrew_section}{newton's curvature formula}
+    \item 
+        if $y = f(x)$ is the curve, and the x-axis is parallel
+        to the tangent at a point, the curvature is just the second
+        derivative of the function (follows from taylors theorem).
+    \item 
+        newton found that if you place the x axis at an arbitary point
+        instead, you just have to patch the formula.  looks interesting
+\end{andrew_section}
+
+\begin{andrew_section}{curvature as rate of turning}
+    \item 
+        after newton, in 1761, someone came up with a more flexible
+        definition of curvature. rate of turning of the tangent
+        with respect to arc length.  $\phi$ is angle of tangent change,
+        so $\kappa = \frac{d\phi}{ds}$.
+    \item 
+        totally local definition, don't have to shuffle around normals
+    \item 
+        now look at things from the perspective of 2 unit normals,
+        T and N. picture them wiggling in place, subtracting the 
+        difference. these are unit vectors so when they wiggle, they
+        wiggle on the unit circle.  i think here you are supposed to
+        view it as just a trig thing, that the wiggle of one has a trig
+        relationship to the wiggle of the other, and we also know the curvature
+        of the circle so bring that in.
+    \item 
+    take v to be
+    $\begin{pmatrix}
+        \dot x \\
+        \dot y
+        \end{pmatrix}$
+    and now we can do our calculations with just a parameterized curve
+    instead of an explicity function, which is very useful.  e.g.
+    $\tan{\phi} = \frac{\dot y}{\dot x}$
+\end{andrew_section}
+
+\begin{andrew_section}{example: newton's tractrix}
     \item 
         Gauss
 \end{andrew_section}
